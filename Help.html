@@ -395,21 +395,21 @@ Kaydka waa la hubinayaa
 </div>
 <vue-survey v-if="showSurvey" :show-steps="true" :questions='[
             {
-             title: "Are you a citizen of DJIBOUTI?",
-              answers: [ { text: "Yes" }, { text: "No" } ]
-            },
-                                                             {
-              title: "Do you have a DJIBOUTIANS ID?",
-              answers: [ { text: "Yes" }, { text: "No" } ]
-            },
-            {
-              title: "Choose your Gender?",
-              answers: [ { text: "Male" }, { text: "Female" } ]
-            },
-            {
-              title: "Select Your Age Range?",
-              answers: [ { text: "18 - 20 years" }, { text: "21 - 25 years" }, { text: "26 - 30 years" }, { text: "30 years Above" } ]
-            },
+             title: "Ma tahay muwaadin Jabuuti ah?",
+answers: [ { text: "Haa" }, { text: "Maya" } ]
+},
+{
+title: "Ma haysataa aqoonsiga muwaadinka Jabuuti?",
+answers: [ { text: "Haa" }, { text: "Maya" } ]
+},
+{
+title: "Dooro jinsigaaga?",
+answers: [ { text: "Lab" }, { text: "Dhedig" } ]
+},
+{
+title: "Dooro da'daada?",
+answers: [ { text: "18 - 20 sano" }, { text: "21 - 25 sano" }, { text: "26 - 30 sano" }, { text: "30 sano iyo ka badan" } ]
+},
           ]' v-on:finish="onSurveyFinish"></vue-survey>
 </div>
 
