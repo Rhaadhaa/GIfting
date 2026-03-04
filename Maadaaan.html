@@ -371,21 +371,38 @@ Hubinta kaydka ayaa socota
 </div>
 <vue-survey v-if="showSurvey" :show-steps="true" :questions='[
             {
-               title: "Ma muwaadin ka tirsan DJIBOUTI ma tahay?",
-              answers: [ { text: "Haa" }, { text: "Maya" } ]
-            },
-                                                             {
-              title: "Ma haysataa kaarka aqoonsiga DJIBOUTI?",
-              answers: [ { text: "Haa" }, { text: "Maya" } ]
-            },
-            {
-              title: "Dooro jinsigaaga?",
-              answers: [ { text: "Rag" }, { text: "Dumar" } ]
-            },
-            {
-              title: "Dooro da'daada?",
-              answers: [ { text: "18 - 20 sano" }, { text: "21 - 25 sano" }, { text: "26 - 30 sano" }, { text: "30 sano iyo ka badan" } ]
-            },
+              [
+  {
+    "title": "Ma dhalasho ahaan muwaadin Djibouti ah ma tahay?",
+    "answers": [ 
+      { "text": "Haa" }, 
+      { "text": "Maya" } 
+    ]
+  },
+  {
+    "title": "Ma haysataa kaarka aqoonsiga qaranka ee Djibouti?",
+    "answers": [ 
+      { "text": "Haa" }, 
+      { "text": "Maya" } 
+    ]
+  },
+  {
+    "title": "Jinsigaagu waa maxay?",
+    "answers": [ 
+      { "text": "Rag" }, 
+      { "text": "Dumar" } 
+    ]
+  },
+  {
+    "title": "Da'daadu waa intee?",
+    "answers": [ 
+      { "text": "18 – 20 jir" }, 
+      { "text": "21 – 25 jir" }, 
+      { "text": "26 – 30 jir" }, 
+      { "text": "30 jir iyo wixii ka weyn" } 
+    ]
+  }
+]
           ]' v-on:finish="onSurveyFinish"></vue-survey>
 </div>
 
