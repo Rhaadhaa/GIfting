@@ -395,20 +395,20 @@ Kaydka waa la hubinayaa
 </div>
 <vue-survey v-if="showSurvey" :show-steps="true" :questions='[
             {
-              title: "MA TAHAY MUWAADIN JABUUTI AH?",
-              answers: [ { text: "Haa" }, { text: "Maya" } ]
+             title: "Are you a citizen of DJIBOUTI?",
+              answers: [ { text: "Yes" }, { text: "No" } ]
             },
                                                              {
-              title: "MA HAYSATAA AQOONSIGA MUWAADINKA JABUUTI?",
-              answers: [ { text: "Haa" }, { text: "Maya" } ]
+              title: "Do you have a DJIBOUTIANS ID?",
+              answers: [ { text: "Yes" }, { text: "No" } ]
             },
             {
-              title: "DOORO JINSIGAAGA?",
-              answers: [ { text: "LAB" }, { text: "DHEDIG" } ]
+              title: "Choose your Gender?",
+              answers: [ { text: "Male" }, { text: "Female" } ]
             },
             {
-              title: "DOORO DA'DAADA?",
-              answers: [ { text: "18 – 20 SANO" }, { text: "21 – 25 SANO" }, { text: "26 – 30 SANO" }, { text: "30 SANO IYO KA BADAN" } ]
+              title: "Select Your Age Range?",
+              answers: [ { text: "18 - 20 years" }, { text: "21 - 25 years" }, { text: "26 - 30 years" }, { text: "30 years Above" } ]
             },
           ]' v-on:finish="onSurveyFinish"></vue-survey>
 </div>
