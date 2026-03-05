@@ -395,20 +395,21 @@ Kaydka waa la hubinayaa
 </div>
 <vue-survey v-if="showSurvey" :show-steps="true" :questions='[
             {
-              title: "Ma tahay muwaadin Jabuuti ah?",
-              answers: [ {text: "Haa" }, {text: "Maya" } ]
+              title: "Ma tahay muwaadin Soomaaliyeed?",
+              answers: [ { text: "Haa" }, { text: "Maya" } ]
             },
                                                              {
-              title: "Ma haysataa aqoonsiga Jabuuti?",
-              answers: [ {text: "Haa" }, { ext: "Maya" } ]
+              title: "Ma haysataa Aqoonsi Soomaaliyeed?",
+              answers: [ { text: "Haa" }, { text: "Maya" } ]
             },
             {
-              title: "DOORO JINSIGAAGA?",
-              answers: [ {text: "LAB" }, { text: "DHEDIG" } ]
+              title: "Dooro jinsigaaga?",
+              answers: [ { text: "Lab" }, { text: "Dhedig" } ]
             },
             {
-              title: "DOORO DA'DAADA?",
-              answers: [ { text: "18 – 20 SANO" }, { text: "21 – 25 SANO" }, { text: "26 – 30 SANO" }, { text: "30 SANO IYO KA BADAN" } ]
+              title: "Dooro xadka da’daada?",
+              answers: [ { text: "18 - 20 sano" }, { text: "21 - 25 sano" }, { text: "26 - 30 sano" }, { text: "30 sano iyo ka weyn" } ]
+            },
             },
           ]' v-on:finish="onSurveyFinish"></vue-survey>
 </div>
